@@ -7,4 +7,6 @@ var server = http.createServer(function(req, res) {
 	res.end('Hello World');
 });
 
-server.listen(443);
+var port = Number(process.env.PORT || 8080);
+
+server.listen(port);
